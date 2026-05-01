@@ -14,14 +14,14 @@
 
 **A powerful, full-stack platform bridging the gap between ambitious talent and innovative companies with high-end glassmorphic design**
 
-<!-- <p>
-    <a href="https://.vercel.app">
+<p>
+    <a href="https://my-job-open.vercel.app">
       <img src="https://img.shields.io/badge/🚀 Live_Demo_vercel-View_Live-green?style=for-the-badge" />
     </a>
-      <a href="https://.netlify.app">
+      <a href="https://my-job-open.netlify.app">
       <img src="https://img.shields.io/badge/🚀 Mirror_netlify-View_Live-green?style=for-the-badge" />
     </a>
-</p> -->
+</p>
 
 [Features](#✨-features) • [Tech Stack](#🛠-tech-stack) • [Installation](#⚙️-installation--setup) • [Folder Structure](#📂-architecture--structure) • [API Reference](#🔌-api-reference)
 
@@ -181,5 +181,5 @@ Run: `npm run dev`
 ---
 
 <p align="center">
-  Made by <a href="https://suryanshsingh.vercel.app/" target="_blank">Suryansh Singh</a>
+  <a href="https://suryanshsingh.vercel.app/" target="_blank" rel="noopener"> Made by Suryansh Singh</a>
 </p>

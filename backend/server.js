@@ -9,9 +9,9 @@ const userRoutes = require("./routes/userRoutes");
 const jobRoutes = require("./routes/jobRoutes");
 const applicationRoutes = require("./routes/applicationRoutes");
 const savedJobRoutes = require("./routes/SavedJobRoutes");
-const analyticsRoutes= require("./routes/analyticsRoutes");
+const analyticsRoutes = require("./routes/analyticsRoutes");
 
-const app=express();
+const app = express();
 
 const fs = require("fs");
 const uploadsDir = path.join(__dirname, "uploads");
@@ -19,16 +19,12 @@ if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir);
 }
 
-const allowedOrigins = [
-    process.env.FRONTEND_URL_VERCEL,
-    process.env.FRONTEND_URL_NETLIFY,
-    "http://localhost:5173",
-    "http://localhost:3000"
-].filter(Boolean);
-
 app.use(
     cors({
-        origin: allowedOrigins.length > 0 ? allowedOrigins : "*",
+        origin: function (origin, callback) {
+            // Allow all origins dynamically
+            return callback(null, true);
+        },
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true
@@ -48,6 +44,6 @@ app.use("/api/analytics", analyticsRoutes);
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads"), {}));
 
-const PORT=process.env.PORT || 8000;
-app.listen(PORT,()=> console.log(`Server running on port ${PORT}`));
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 

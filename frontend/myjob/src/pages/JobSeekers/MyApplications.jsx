@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import DashboardLayout from '../../components/layout/DashboardLayout';
-import {
-  FileText, Clock, CheckCircle2, XCircle, Briefcase,
-  MapPin, ArrowRight, Loader2, Search, Filter, RefreshCw,
-  Building, Eye, CalendarDays, Sparkles
-} from 'lucide-react';
+import {FileText, Clock, CheckCircle2, XCircle, Briefcase, MapPin, ArrowRight, Loader2, Search, Filter, RefreshCw, Building, Eye, CalendarDays, Sparkles} from 'lucide-react';
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../../utils/axiosInstance';

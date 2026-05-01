@@ -125,7 +125,6 @@ const JobSeekerdashboard = () => {
         <div className="absolute top-20 -left-20 w-72 h-72 bg-blue-400 rounded-full mix-blend-overlay blur-3xl opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-blue-100 text-xs font-bold uppercase tracking-wider mb-6">
-            <Sparkles className="h-4 w-4 text-amber-300" />
             Over thousands of jobs available
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center tracking-tight leading-tight mb-6 max-w-4xl">
