@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme{
+  --font-display: "Urbanist", sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: #00A7F3;
+}
+
+@layer base{
+  body{
+    background-color: #f7fafe;
+    /* overflow: hidden; */
+  }
+}
+
+button, 
+a, 
+[role="button"],
+.cursor-pointer,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer !important;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none !important;
+}
